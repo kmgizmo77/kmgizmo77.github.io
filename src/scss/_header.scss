@@ -1,0 +1,181 @@
+.navbar {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 0;
+  margin: 0;
+  border: 0;
+  //Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+  border-radius: 0;
+  background-color: $black_10;
+
+  &.affix {
+    position: fixed;
+    top: 0;
+    padding: 10px 0;
+    //Instead of the line below you could use @include box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+    box-shadow: 0 0 15px $black_20;
+    padding-top: 15px;
+    background-color: $white;
+    background-color: #fff;
+
+    .brand-img-white {
+      display: none;
+    }
+
+    .brand-img {
+      display: inline-block;
+    }
+
+    .navbar-nav {
+      li a {
+        color: $color_gravel_approx;
+      }
+
+      >li>a:hover {
+        color: $white;
+      }
+
+      >.active>a {
+        color: $white;
+      }
+    }
+
+    .navbar-toggle {
+      margin-top: 5px;
+      margin-bottom: 5px;
+
+      &.collapsed .icon-bar {
+        background-color: $color_crimson_approx;
+      }
+    }
+  }
+}
+
+.navbar-toggle {
+  margin-top: 0;
+
+  .icon-bar {
+    background-color: $color_crimson_approx;
+    height: 2px;
+    width: 30px;
+
+    +.icon-bar {
+      margin-top: 5px;
+    }
+  }
+
+  &.collapsed .icon-bar {
+    background-color: $white;
+  }
+}
+
+@media(max-height: 320px) {
+  .navbar .navbar-collapse {
+    max-height: 240px;
+  }
+}
+
+.brand {
+  display: inline-block;
+  margin-left: 15px;
+  margin-top: 0;
+  margin-bottom: 0;
+  text-align: center;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
+}
+
+.brand-img-white {
+  display: inline-block;
+}
+
+.brand-img {
+  display: none;
+}
+
+.navbar-nav {
+  margin: 0;
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 10px;
+
+  li {
+    position: relative;
+    margin-top: 0;
+    -webkit-perspective: 2000px;
+    perspective: 2000px;
+    border-bottom: 1px solid $white_5;
+
+    a {
+      color: $white;
+      font-weight: 700;
+      text-decoration: none;
+      padding: 12px 20px;
+      -webkit-transition: background-color 0.3s;
+      -moz-transition: background-color 0.3s;
+      transition: background-color 0.3s;
+
+      &:hover {
+        background-color: transparent;
+      }
+
+      &:focus {
+        background-color: transparent;
+      }
+    }
+
+    ul {
+      font-size: 14px;
+    }
+
+    li {
+      border-bottom: 1px solid $white_5;
+
+      &:last-child {
+        border-bottom: 0;
+      }
+
+      a {
+        display: block;
+        padding: 15px 20px;
+        color: $color_silver_chalice_approx;
+
+        .fa {
+          margin-right: 10px;
+        }
+      }
+    }
+
+    &:hover {
+      z-index: 1;
+
+      >ul {
+        opacity: 1;
+        -webkit-transform: rotateY(0);
+        -moz-transform: rotateY(0);
+        transform: rotateY(0);
+      }
+    }
+  }
+
+  .active>a {
+    background-color: transparent;
+  }
+
+  >li>a:hover {
+    background-color: $color_crimson_approx;
+  }
+
+  >.active>a {
+    background-color: $color_crimson_approx;
+  }
+}

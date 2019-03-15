@@ -1,0 +1,108 @@
+//@extend-elements
+//original selectors
+//h1, .h1
+%extend_1 {
+  font-size: 28px;
+  line-height: 1.3;
+  font-weight: 700;
+  margin: 0 0 30px 0;
+}
+
+//original selectors
+//h2, .h2
+%extend_2 {
+  position: relative;
+  font-size: 42px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: $color_gravel_approx;
+}
+
+//original selectors
+//h3, .h3
+%extend_3 {
+  font-size: 20px;
+  line-height: 1.25;
+  font-weight: 700;
+  color: $black;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+//original selectors
+//h4, .h4
+%extend_4 {
+  font-size: 15px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: $color_gravel_approx;
+  margin: 0;
+}
+
+//original selectors
+//ul, ol
+%extend_5 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+//original selectors
+//ol li, ul li
+%extend_6 {
+  margin-top: 10px;
+}
+
+//original selectors
+//a:hover, a:focus
+%extend_7 {
+  color: $color_crimson_approx;
+  outline: none;
+}
+
+//original selectors
+//.form-control, textarea.form-control
+%extend_8 {
+  height: 50px;
+  color: $color_star_dust_approx;
+  border-radius: 30px;
+  padding-left: 22px;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: all .15s;
+  transition: all .15s;
+}
+
+//original selectors
+//.btn:hover, .btn:focus
+%extend_9 {
+  border-color: $color_persimmon_approx;
+  background-color: $color_persimmon_approx;
+  color: $white;
+}
+
+//original selectors
+//.btn-light, .btn-light:after, .btn-light:focus
+%extend_10 {
+  color: $white;
+}
+
+//original selectors
+//.btn-b-white:hover, .btn-b-white:focus
+%extend_11 {
+  border-color: $white;
+  background-color: $white;
+  color: $color_crimson_approx;
+}
+
+//original selectors
+//a.fa:hover, a.fa:focus
+%extend_12 {
+  text-decoration: none;
+}
+
+//original selectors
+//.section, .section-lg
+%extend_13 {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
