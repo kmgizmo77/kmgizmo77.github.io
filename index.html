@@ -1,0 +1,471 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title>KIOsK by publisher kiok,park </title>
+    <meta content="width=1200;" name="viewport" />
+    <link rel="stylesheet" href="assets/css/default.css?20130217" type="text/css" />
+    <!--[if lte IE 6]> 
+<link rel="stylesheet" href="assets/styles/ie6.css" type="text/css" />
+<![endif]-->
+    <script type="text/javascript" src="assets/js/jquery-1.8.3.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.imgpreload.min.js"></script>
+    <script type="text/javascript" src="assets/js/jquery.mousewheel.3.0.6.js"></script>
+    <script type="text/javascript" src="assets/js/extended.js?20130216"></script>
+    <script type="text/javascript">
+        (function ($) {
+            $(function () {
+                $.kiosk.portfolio.init();
+            });
+        })(jQuery);
+    </script>
+</head>
+
+<body>
+    <div id="loader">
+        <img src="assets/images/common/loader.gif" alt="로딩중" />
+    </div>
+    <div id="loaded" class="hide-fake"></div>
+    <div id="wrapper" class="hide-fake" style="display:none;">
+        <div id="container">
+            <!-- GNB -->
+            <div id="bgd">
+                <div class="gnb hide">
+                    <a href="#cont" class="gotocont">본문바로가기</a>
+                    <a href="#" id="gnb_intro" class="intro" onclick="$.kiosk.portfolio.menu.primary.show('intro'); return false;">KIOsK
+                        <span> by publisher kiok,park</span></a>
+                    <a href="#" id="gnb_intro" class="profile" onclick="$.kiosk.portfolio.menu.primary.show('intro'); return false;">profile</a>
+                    <a href="#" id="gnb_web" class="web" onclick="$.kiosk.portfolio.menu.primary.show('web'); return false;">web</a>
+                    <a href="#" id="gnb_mobile" class="mobile" onclick="$.kiosk.portfolio.menu.primary.show('mobile'); return false;">mobile</a>
+                    <a href="#" id="gnb_app" class="app" onclick="$.kiosk.portfolio.menu.primary.show('app'); return false;">app</a>
+                    <a href="http://twitter.com/dreamiingcat" target="_blank" class="sns twit"><img src="assets/images/common/btn_twit.png"
+                            alt="twitter"></a>
+                    <a href="http://www.facebook.com/profile.php?id=100001640866744&sk=subscribedto" target="_blank"
+                        class="sns fb"><img src="assets/images/common/btn_fb.png" alt="facebook"></a>
+                    <a href="/wordpress/" target="_blank" class="sns blog"><img src="assets/images/common/btn_blog.png"
+                            alt="blog"></a>
+                    <a href="/wordpress/?page_id=51" target="_blank" class="sns email"><img src="assets/images/common/btn_email.png"
+                            alt="email"></a>
+                </div>
+            </div>
+            <!-- // GNB -->
+            <!-- contents -->
+            <div class="contents" id="cont">
+                <div class="region">
+
+                    <!-- introduction -->
+                    <div id="step-intro" class="intro hide-fake" data-animate-duration-base="700"
+                        data-animate-duration-step="50" data-animate-duration-step-hide="30">
+                        <div class="text-1" data-offset-top-show="10" data-animate-duration="1"
+                            data-animate-duration-reverse="5" data-animate-delay-hide="1"><span class="subtitle">Front-end
+                                Developer & Pulisher kiok,Park</span></div>
+                        <div class="text-2" data-offset-top-show="30" data-animate-duration="2"
+                            data-animate-duration-reverse="4" data-animate-delay-hide="1">
+                            <h2>Profile and Portfolio</h2>
+                        </div>
+                        <!-- 
+					<div class="news-title" data-offset-top-show="120" data-animate-duration="1" data-animate-duration-reverse="5" data-animate-delay-hide="1"><h3>blog</h3></div>						
+					<div class="news-element news-element-1" data-offset-top-show="150" data-animate-duration-reverse="4" data-animate-duration="2" data-animate-delay-hide="1">
+						<div class="bullet"><img src="assets/images/main/img_news_bullet.png" onerror="javascript:$.kiosk.portfolio.ui.image.reload(this);" /></div>
+						<div class="text"><a href="#" onclick="$.kiosk.portfolio.menu.main.news.detail.show('<iframe src=\"iframe/src_msony01.html\" width=\"742px\" height=\"654px\"></iframe>', 742, 654); return false;"> 블로그 뉴스</a></div>
+					</div>
+					-->
+                        <div style="z-index:1;" class="kiosk" data-offset-top-show="120" data-animate-duration="9"
+                            data-animate-duration-reverse="2" data-animate-delay-hide="1"><img src="assets/images/main/me1_on.jpg"
+                                alt="퍼블리셔 박기옥의 사진" onerror="javascript:$.kiosk.portfolio.ui.image.reload(this);" /></div>
+                        <div class="profile" data-offset-top-show="120" data-animate-duration="5"
+                            data-animate-duration-reverse="1" data-animate-delay-hide="2">
+                            <dl>
+                                <dt>Name</dt>
+                                <dd>박기옥 kiok Park</dd>
+                                <dt>Birth</dt>
+                                <dd>1977.02.16</dd>
+                                <dt>Job</dt>
+                                <dd>웹퍼블리셔, 프론트엔드 개발자,Web Standard front-end developer</dd>
+                                <dt>Work</dt>
+                                <dd><span class=period>2011.07 ~ 2013.현재</span><br>Sony Korea 웹사이트 개선,운영</dd>
+                                <dd><span class=period>2011.04 ~ 2011.06</span><br>SK 커머스플래닛 11번가 패션본부 이벤트 코딩</dd>
+                                <dd><span class=period>2010.07 ~ 2011.03</span><br>KT Qook 사이트 운영/개편 퍼블리셔, olleh.com
+                                    마이그레이션</dd>
+                                <dd><span class=period>2010.04 ~ 2010.06</span><br>이마트몰 재구축 프로젝트 퍼블리싱</dd>
+                                <dd><span class=period>2008.04 ~ 2010.03</span><br>아마존인슈 웹사이트 운영 코딩</dd>
+                                <dd><span class=period>2003.12 ~ 2007.05</span><br>신발끈여행사 웹사이트 운영</dd>
+                                <dd><span class=period>2001.06 ~ 2002.12</span><br>(주)미래넷 LMS 솔루션 개발</dd>
+                                <dd><span class=period>2000.01 ~ 2001.05</span><br>텔레메드 메디조아 웹사이트 개발,운영</dd>
+                                <dt>Contact</dt>
+                                <dd>moblie: 010-2216-8516</a></dd>
+                                <dd>email: <a href="http://gizmoworld.cafe24.com/wordpress/?page_id=51" target="_blank">kmgizmo@nate.com</a></dd>
+                            </dl>
+                        </div>
+                        <div class="arrow-right" onclick="$.kiosk.portfolio.menu.primary.show('web');"><img src="assets/images/01web/btn_next.png"
+                                alt="다음" onerror="javascript:$.kiosk.portfolio.ui.image.reload(this);" /></div>
+                    </div>
+                    <!-- //intro -->
+
+                    <!-- web -->
+                    <div id="step-web" class="web hide-fake" data-animate-duration-base="700"
+                        data-animate-duration-step="50" data-animate-duration-step-hide="30">
+                        <div class="text-1" data-offset-top-show="20" data-animate-duration="1" data-animate-delay="2"
+                            data-animate-duration-reverse="7" data-animate-delay-hide="1"><span class="subtitle">desktop
+                                & tablet</span></div>
+                        <div class="text-2" data-offset-top-show="70" data-animate-duration="2" data-animate-delay="2"
+                            data-animate-duration-reverse="6" data-animate-delay-hide="1">
+                            <h2>Web UI</h2>
+                        </div>
+                        <div class="menu menu-1" data-offset-top-show="170" data-animate-duration="3"
+                            data-animate-duration-reverse="5" data-animate-delay="2" data-animate-delay-hide="1"><a
+                                href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',1); return false;"
+                                class="on">sony Korea</a></div>
+                        <div class="menu menu-2" data-offset-top-show="200" data-animate-duration="4"
+                            data-animate-duration-reverse="4" data-animate-delay="2" data-animate-delay-hide="1"><a
+                                href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',5); return false;">SK커머스플래닛
+                                11번가</a></div>
+                        <div class="menu menu-3" data-offset-top-show="230" data-animate-duration="5"
+                            data-animate-duration-reverse="3" data-animate-delay="3" data-animate-delay-hide="1"><a
+                                href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',7); return false;">KT
+                                Olleh</a></div>
+                        <div class="menu menu-4" data-offset-top-show="260" data-animate-duration="6"
+                            data-animate-duration-reverse="2" data-animate-delay="4" data-animate-delay-hide="1"><a
+                                href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',9); return false;">KT
+                                QOOK</a></div>
+                        <div class="menu menu-5" data-offset-top-show="290" data-animate-duration="7"
+                            data-animate-duration-reverse="1" data-animate-delay="5" data-animate-delay-hide="1"><a
+                                href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',11); return false;">이마트몰</a></div>
+                        <div class="tablet" data-offset-top-show="20" data-animate-duration="1"
+                            data-animate-duration-reverse="2" data-animate-delay-hide="0">
+                            <div class="background"><img src="assets/images/common/bg_tablet.png" alt="" onerror="javascript:$.kiosk.portfolio.ui.image.reload(this);" /></div>
+                            <div class="container">
+                                <div class="pages">
+                                    <div class="page page-1">
+                                        <h3><span>sony Korea 운영</span><br>소니코리아 홈페이지<span class="url"><a href="http://www.sony.co.kr"
+                                                    target="_blank">www.sony.co.kr</a></span></h3>
+                                        <p>소니코리아 운영/개선 <br><br>주요이슈 : K-WAH 접근성 평가 도구를 기준으로 개선 진행중<br><br>
+                                            메인 롤링 비쥬얼 영역 스크립트 개선 작업, CF 동영상 모바일 기기 포함 크로스브라우징 작업<br><br>
+                                            운영이슈 : 비쥬얼 ,이벤트 배너,CF 동영상 교체 </p>
+                                        <p class="imgright"><img src="assets/images/01web/shot_sony.png" alt="소니코리아홈페이지"></p>
+                                        <ul class="sublayer">
+                                            <li class="on"><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',1); return false;">1</a></li>
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',2); return false;">2</a></li>
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',3); return false;">3</a></li>
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',4); return false;">4</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="page page-2">
+                                        <h3><span>sony Korea 운영</span><br>BP, BP Engineering<span class="url"><a href="http://bp.sony.co.kr"
+                                                    target="_blank">bp.sony.co.kr</a><br><a href="http://bpeng.sony.co.kr"
+                                                    target="_blank">bpeng.sony.co.kr</a></span></h3>
+                                        <p>운영이슈 : 제품 비쥬얼, 신상품 feature 코딩 작업<br><br>주요이슈:메인 drag 레이어 및 ajax연동 data 실시간
+                                            로딩 부분 스크립트 개선 작업</p>
+                                        <p class="imgright"><img src="assets/images/01web/shot_bpeng.png" alt="소니 BPEN 홈페이지"></p>
+
+                                        <ul class="sublayer">
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',1); return false;">1</a></li>
+                                            <li class="on"><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',2); return false;">2</a></li>
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',3); return false;">3</a></li>
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',4); return false;">4</a></li>
+                                        </ul>
+
+                                    </div>
+                                    <div class="page page-3">
+                                        <h3><span>sony Korea 운영</span><br>소니 스토어<span class="url"><a href="http://www.sony.co.kr/store"
+                                                    target="_blank">http://www.sony.co.kr/store</a></span></h3>
+                                        <p>운영이슈 : 이벤트, 정기DM 코딩<br><br>주요이슈 : 접근성 개선 진행중<br>메인 이벤트 배너 롤링스크립트 개선<br>제품노출
+                                            레이아웃 개편</p>
+                                        <p class="imgright"><img src="assets/images/01web/shot_store.png" alt="소니 스토어"></p>
+                                        <ul class="sublayer">
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',1); return false;">1</a></li>
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',2); return false;">2</a></li>
+                                            <li class="on"><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',3); return false;">3</a></li>
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',4); return false;">4</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="page page-4">
+                                        <h3><span>sony Korea 운영</span><br>NEX-7 마이크로 사이트 구축<span class="url"><a href="http://image.sonystyle.co.kr/sonyMicro/NEX-7/main.html"
+                                                    target="_blank">http://alpha.sony.co.kr/nex-7</a></span></h3>
+                                        <p>알파 NEX-7 마이크로 사이트 구축<br>
+                                            다수의 마이크로 사이트 구축에 참여 또는 유지보수 작업 진행</p>
+                                        <p class="imgright"><img src="assets/images/01web/shot_nex7.png" alt="NEX-7 마이크로 사이트"></p>
+                                        <ul class="sublayer">
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',1); return false;">1</a></li>
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',2); return false;">2</a></li>
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',3); return false;">3</a></li>
+                                            <li class="on"><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',4); return false;">4</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="page page-5">
+                                        <h3><span>SK 커머스플래닛 11번가 </span><br>패션부문 기획전/이벤트 운영<span class="url"><a href="http://www.11st.co.kr"
+                                                    target="_blank">www.11st.co.kr</a></span></h3>
+                                        <p>신속 정확하게 다량의 작업물 생산해야 하므로, 효율적인 작업을 위해 정기적으로 업데이트되는 이벤트/기획전들의 경우 유형별로
+                                            코딩/스크립트의 모듈화가 요구됨</p>
+                                        <p class="imgright"><img src="assets/images/01web/shot_11st01.png" alt="11번가 홈페이지"></p>
+                                        <ul class="sublayer">
+                                            <li class="on"><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',5); return false;">1</a></li>
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',6); return false;">2</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="page page-6">
+                                        <h3><span>SK 커머스플래닛 11번가 </span><br>패션부문 기획전/이벤트 운영<span class="url"><a href="http://www.11st.co.kr"
+                                                    target="_blank">www.11st.co.kr</a></span></h3>
+                                        <p>다양한 포맷의 이벤트/기획전 코딩 및 스크립트 작업, 빌보드, 정기 DM 코딩</p>
+                                        <p class="imgright"><img src="assets/images/01web/shot_11st02.png" alt="11번가 홈페이지"></p>
+                                        <ul class="sublayer">
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',5); return false;">1</a></li>
+                                            <li class="on"><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',6); return false;">2</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="page page-7">
+                                        <h3><span>KT Olleh </span><br>olleh.com 개선/운영<span class="url"><a href="http://www.olleh.com"
+                                                    target="_blank">www.olleh.com</a></span></h3>
+                                        <p>인터넷,집전화,인터넷전화 채널 담당 운영 및 개선이슈 대응<br><br>인터넷 채널 메인화면의 UI의 정기 개편 작업<br><br>
+                                            업데이트가 빈번한 영역으로 운영/관리의 효율성을 고려하여 코딩<br>로딩 속도 개선에 중점</p>
+                                        <p class="imgright"><img src="assets/images/01web/shot_olleh_internet.png" alt="KT Olleh 홈페이지"></p>
+                                        <ul class="sublayer">
+                                            <li class="on"><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',7); return false;">1</a></li>
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',8); return false;">2</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="page page-8">
+                                        <h3><span>KT Olleh </span><br>olleh.com 마이그레이션<span class="url"><a href="http://www.olleh.com"
+                                                    target="_blank">www.olleh.com</a></span></h3>
+                                        <p>QOOK과 SHOW, 국제전화001 사이트를 통합하여 olleh.com Front-end UI개발<br><br>
+                                            Back-end 개발코드 수정을 최소한으로 할 수 있도록 DOM 구조와 스타일,스크립트 분리하여 Front-end UI개발 작업 진행</p>
+                                        <p class="imgright"><img src="assets/images/01web/shot_olleh_phone.png" alt="KT Olleh 홈페이지"></p>
+                                        <ul class="sublayer">
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',7); return false;">1</a></li>
+                                            <li class="on"><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',8); return false;">2</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="page page-9">
+                                        <h3><span>KT QOOK </span><br>qook.co.kr 개선,개편,운영<span class="url"><a href="http://www.qook.co.kr"
+                                                    target="_blank">www.qook.co.kr</a></span></h3>
+                                        <p>
+                                            - 1차 부분 개편 진행<br>
+                                            모바일에서의 상하 스크롤 네비게이션 스크립트 오류 조정<br>
+                                            미디어쿼리 이용하여 RWD 구현<br><br>
+                                            공통 GNB 로딩속도 개선 스크립트 작업 및 배포<br>
+                                        </p>
+                                        <p class="imgright"><img src="assets/images/01web/shot_qook.png" alt="KT QOOK 홈페이지"></p>
+                                        <ul class="sublayer">
+                                            <li class="on"><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',9); return false;">1</a></li>
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',10); return false;">2</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="page page-10">
+                                        <h3><span>KT QOOK </span><br>qook.co.kr 개선,개편,운영<span class="url"><a href="http://www.qook.co.kr"
+                                                    target="_blank">www.qook.co.kr</a></span></h3>
+                                        <p>- 2차 부분 개편 진행<br>
+                                            스크립트 및 스타일의 minify, 성능 개선 중점
+                                        </p>
+                                        <p class="imgright"><img src="assets/images/01web/shot_qook2.png" alt="KT QOOK 홈페이지"></p>
+                                        <ul class="sublayer">
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',9); return false;">1</a></li>
+                                            <li class="on"><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',10); return false;">2</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="page page-11">
+                                        <h3><span>이마트몰</span><br>이마트몰 재구축 프로젝트<span class="url"><a href="http://www.emartmall.co.kr"
+                                                    target="_blank">www.emartmall.co.kr</a></span></h3>
+                                        <p>마이페이지,타임서비스,쿠킹스튜디오,회원관련 페이지 코딩 및 스크립트 </p>
+                                        <p class="imgright"><img src="assets/images/01web/shot_emart01.png" alt="이마트몰 홈페이지"></p>
+                                        <ul class="sublayer">
+                                            <li class="on"><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',11); return false;">1</a></li>
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',12); return false;">2</a></li>
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',13); return false;">2</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="page page-12">
+                                        <h3><span>이마트몰</span><br>이마트몰 재구축 프로젝트<span class="url"><a href="http://www.emartmall.co.kr"
+                                                    target="_blank">www.emartmall.co.kr</a></span></h3>
+                                        <p>마이페이지,타임서비스,쿠킹스튜디오,회원관련 페이지 코딩 및 스크립트 </p>
+                                        <p class="imgright"><img src="assets/images/01web/shot_emart02.png" alt="이마트몰 홈페이지"></p>
+                                        <ul class="sublayer">
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',11); return false;">1</a></li>
+                                            <li class="on"><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',12); return false;">2</a></li>
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',13); return false;">2</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="page page-13">
+                                        <h3><span>이마트몰</span><br>이마트몰 재구축 프로젝트<span class="url"><a href="http://www.emartmall.co.kr"
+                                                    target="_blank">www.emartmall.co.kr</a></span></h3>
+                                        <p>마이페이지,타임서비스,쿠킹스튜디오,회원관련 페이지 코딩 및 스크립트 </p>
+                                        <p class="imgright"><img src="assets/images/01web/shot_emart03.png" alt="이마트몰 홈페이지"></p>
+                                        <ul class="sublayer">
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',11); return false;">1</a></li>
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',12); return false;">2</a></li>
+                                            <li class="on"><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('web',13); return false;">2</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="arrow-left" onclick="javascript:$.kiosk.portfolio.menu.secondary.show.prev('web');"><img
+                                    src="assets/images/01web/btn_prev.png" alt="이전" onerror="javascript:$.kiosk.portfolio.ui.image.reload(this);" /></div>
+                            <div class="arrow-right" onclick="javascript:$.kiosk.portfolio.menu.secondary.show.next('web');"><img
+                                    src="assets/images/01web/btn_next.png" alt="다음" onerror="javascript:$.kiosk.portfolio.ui.image.reload(this);" /></div>
+                        </div>
+                    </div>
+                    <!-- //web -->
+
+                    <!-- mobile web -->
+                    <div id="step-mobile" class="mobile hide-fake" data-animate-duration-base="700"
+                        data-animate-duration-step="50" data-animate-duration-step-hide="30">
+                        <div class="text-1" data-offset-top-show="20" data-animate-duration="1"
+                            data-animate-duration-reverse="4" data-animate-delay="2" data-animate-delay-hide="1"><span
+                                class="subtitle">mobile web UI</span></div>
+                        <div class="text-2" data-offset-top-show="70" data-animate-duration="2"
+                            data-animate-duration-reverse="3" data-animate-delay="2" data-animate-delay-hide="1">
+                            <h2>Mobile</h2>
+                        </div>
+                        <div class="menu menu-1" data-offset-top-show="230" data-animate-duration="3"
+                            data-animate-duration-reverse="2" data-animate-delay="2" data-animate-delay-hide="1"><a
+                                href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('mobile',1); return false;">소니코리아
+                                모바일</a></div>
+                        <div class="menu menu-2" data-offset-top-show="260" data-animate-duration="4"
+                            data-animate-duration-reverse="1" data-animate-delay="2" data-animate-delay-hide="1"><a
+                                href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('mobile',3); return false;">소니
+                                인트라넷</a></div>
+                        <div class="tablet mobile" data-offset-top-show="20" data-animate-duration="1"
+                            data-animate-duration-reverse="2" data-animate-delay-hide="0">
+                            <div class="container">
+                                <div class="pages">
+                                    <div class="page page-1">
+                                        <h3><span>sony Korea 모바일</span><br><span class="url"><a href="http://m.sony.co.kr"
+                                                    target="_blank">m.sony.co.kr</a></span><br>소니코리아 모바일웹</h3>
+                                        <p>소니코리아 모바일웹<br> 모바일 전용사이트 <br><br> html5, jquery mobile, CSS3 사용<br><br>
+                                            레티나 디스플레이 환경의 고화질 이미지 표현을 위해 이미지 작업 2배로 한뒤,CSS 및 코딩 리사이징을 통해 조정함</p>
+                                        <p class="imgright"><img src="assets/images/02mob/shot_msony01.png" alt="소니코리아 모바일웹"></p>
+                                        <ul class="sublayer">
+                                            <li class="on"><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('mobile',1); return false;">1</a></li>
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('mobile',2); return false;">2</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="page page-2">
+                                        <h3><span>sony Korea 모바일</span><br><span class="url"><a href="http://m.sony.co.kr"
+                                                    target="_blank">m.sony.co.kr</a></span><br>소니코리아 모바일웹</h3>
+                                        <p>운영이슈 : 이벤트 코딩, 메인 롤링 비쥬얼 교체<br><br>
+                                            주요이슈 : 자동완성 검색 개선 UI 작업</p>
+                                        <p class="imgright"><img src="assets/images/02mob/shot_msony02.png" alt="소니코리아 모바일웹"></p>
+                                        <ul class="sublayer">
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('mobile',1); return false;">1</a></li>
+                                            <li class="on"><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('mobile',2); return false;">2</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="page page-3">
+                                        <h3><span>sony Korea 모바일</span><br>소니코리아 모바일 인트라넷<span class="url"><a href="http://intranet.sony.co.kr"
+                                                    target="_blank">intranet.sony.co.kr</a></span></h3>
+                                        <p>소니코리아 모바일 인트라넷 운영/개선 <br> jquery mobile 사용</p>
+                                        <p class="imgright"><img src="assets/images/02mob/shot_mintra01.png" alt="소니코리아 모바일 인트라넷"></p>
+                                        <ul class="sublayer">
+                                            <li class="on"><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('mobile',3); return false;">1</a></li>
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('mobile',4); return false;">2</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="page page-4">
+                                        <h3><span>sony Korea 모바일</span><br>소니코리아 모바일 인트라넷<span class="url"><a href="http://intranet.sony.co.kr"
+                                                    target="_blank">intranet.sony.co.kr</a></span></h3>
+                                        <p>신규페이지 생성 페이지 작업<br><br>로그인,알람,퀵버튼 관련 화면 개선 작업<br><br>정기 설문페이지 작업</p>
+                                        <p class="imgright"><img src="assets/images/02mob/shot_mintra02.png" alt="소니코리아 모바일 인트라넷"></p>
+                                        <ul class="sublayer">
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('mobile',3); return false;">1</a></li>
+                                            <li class="on"><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('mobile',4); return false;">2</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="arrow-left" onclick="javascript:$.kiosk.portfolio.menu.secondary.show.prev('mobile');"><img
+                                    src="assets/images/02mob/btn_left.png" alt="이전" onerror="javascript:$.kiosk.portfolio.ui.image.reload(this);" /></div>
+                            <div class="arrow-right" onclick="javascript:$.kiosk.portfolio.menu.secondary.show.next('mobile');"><img
+                                    src="assets/images/02mob/btn_right.png" alt="다음" onerror="javascript:$.kiosk.portfolio.ui.image.reload(this);" /></div>
+                        </div>
+                    </div>
+                    <!-- //mobile web -->
+
+                    <!-- app -->
+                    <div id="step-app" class="app hide-fake" data-animate-duration-base="700"
+                        data-animate-duration-step="50" data-animate-duration-step-hide="30">
+                        <div class="text-1" data-offset-top-show="20" data-animate-duration="1"
+                            data-animate-duration-reverse="7" data-animate-delay="2" data-animate-delay-hide="1"><span
+                                class="subtitle">mobile app UI</span></div>
+                        <div class="text-2" data-offset-top-show="70" data-animate-duration="2"
+                            data-animate-duration-reverse="6" data-animate-delay="2" data-animate-delay-hide="1">
+                            <h2>App</h2>
+                        </div>
+
+                        <div class="menu menu-1" data-offset-top-show="170" data-animate-duration="3"
+                            data-animate-duration-reverse="5" data-animate-delay="2" data-animate-delay-hide="1"><a
+                                href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('app',1); return false;">KT
+                                터치콜</a></div>
+                        <div class="menu menu-2" data-offset-top-show="200" data-animate-duration="4"
+                            data-animate-duration-reverse="4" data-animate-delay="2" data-animate-delay-hide="1"><a
+                                href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('app',3); return false;">KT
+                                스마트쿡</a></div>
+
+                        <div class="tablet app" data-offset-top-show="20" data-animate-duration="1"
+                            data-animate-duration-reverse="2" data-animate-delay-hide="0">
+
+                            <div class="container">
+                                <div class="pages">
+                                    <div class="page page-1">
+                                        <h3><span>KT 모바일 웹앱</span><br>KT 터치콜</h3>
+                                        <p>KT 터치콜 웹앱 UI 코딩 <br> jquery, CSS3 사용 </p>
+                                        <p class="imgright"><img src="assets/images/03app/shot_call01.png" alt="KT 터치콜"></p>
+                                        <ul class="sublayer">
+                                            <li class="on"><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('app',1); return false;">1</a></li>
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('app',2); return false;">2</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="page page-2">
+                                        <h3><span>KT 모바일 웹앱</span><br>KT 터치콜</h3>
+                                        <p>전화걸기 및 GPS 기능을 연동한, 모바일 기기용 전화번호부 웹앱 UI구현</p>
+                                        <p class="imgright"><img src="assets/images/03app/shot_call02.png" alt="KT 터치콜 "></p>
+                                        <ul class="sublayer">
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('app',1); return false;">1</a></li>
+                                            <li class="on"><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('app',2); return false;">2</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="page page-3">
+                                        <h3><span>KT 모바일 웹앱</span><br>KT 스마트쿡</h3>
+                                        <p>요리 레시피 검색 스마트폰용 웹앱<br>KT 스마트쿡 웹앱 UI 코딩 <br> jquery, CSS3 사용 <br><br>KT ann폰
+                                            용 UI를 을 갤럭시탭과 아이패드용으로 UI확장 작업</p>
+                                        <p class="imgright"><img src="assets/images/03app/shot_cook01.png" alt="KT 스마트쿡"></p>
+                                        <ul class="sublayer">
+                                            <li class="on"><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('app',3); return false;">1</a></li>
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('app',4); return false;">2</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="page page-4">
+                                        <h3><span>KT 모바일 웹앱</span><br>KT 스마트쿡</h3>
+                                        <p>음성과 동영상 기능 지원</p>
+                                        <p class="imgright"><img src="assets/images/03app/shot_cook02.png" alt="KT 스마트쿡 "></p>
+                                        <ul class="sublayer">
+                                            <li><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('app',3); return false;">1</a></li>
+                                            <li class="on"><a href="#" onclick="$.kiosk.portfolio.menu.secondary.show.specify('app',4); return false;">2</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="arrow-left" onclick="javascript:$.kiosk.portfolio.menu.secondary.show.prev('app');"><img
+                                    src="assets/images/03app/btn_left.png" alt="이전" onerror="javascript:$.kiosk.portfolio.ui.image.reload(this);" /></div>
+                            <div class="arrow-right" onclick="javascript:$.kiosk.portfolio.menu.secondary.show.next('app');"><img
+                                    src="assets/images/03app/btn_right.png" alt="다음" onerror="javascript:$.kiosk.portfolio.ui.image.reload(this);" /></div>
+                        </div>
+                    </div>
+                    <!-- //app -->
+                </div>
+            </div>
+            <!-- //contents -->
+        </div>
+    </div>
+
+    <!-- 
+<div id="news">
+	<div class="background"></div>
+	<div class="contents" onclick="javascript:$.kiosk.portfolio.menu.main.news.detail.hide();"></div>
+</div>
+-->
+</body>
+
+</html>
